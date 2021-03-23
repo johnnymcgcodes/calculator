@@ -15,3 +15,7 @@
 .grid-item button {
   width: 100%;
 }
+.lower-buttons {
+  display: flex;
+  justify-content: space-between;
+}

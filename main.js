@@ -29,3 +29,12 @@ function operate(operator, num1, num2){
       break;
   };
 };
+
+// let buttons = document.querySelectorAll("#alpha button");
+
+// for(var i =0; i < buttons.length; i++){
+//   var btn = buttons[i];
+//   btn.addEventListener("click", function() {
+//     document.getElementsByClassName("display").value += this.innerHTML;
+//   });
+// };

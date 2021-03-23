@@ -10,10 +10,16 @@
   </head>
   <body>
     <h1>Calculator TI-2bazillion</h1>
-    <div class ="display"></div>
-    <div class="grid-container">
-      <div class="grid-item"><button>1</button></div>
-      <div class="grid-item"><button>2</button></div>
+    <div class="top-button button">
+      <button class="action-button">
+        Clear
+      </button></div>
+    <div class ="display">
+    <input id="textbox">
+    </div>
+    <div class="grid-container" id="alpha">
+      <div class="grid-item"><button id ="1" class="letters">1</button></div>
+      <div class="grid-item"><button id ="2" class="letters">2</button></div>
       <div class="grid-item"><button>3</button></div>
       <div class="grid-item"><button>4</button></div>
       <div class="grid-item"><button>5</button></div>
@@ -22,16 +28,23 @@
       <div class="grid-item"><button>8</button></div>
       <div class="grid-item"><button>9</button></div>
       <div class="grid-item"><button>0</button></div>
-      <div class="grid-item"><button>0</button></div>
+      <div class="grid-item"><button>.</button></div>
       <div class="grid-item"><button>+</button></div>
       <div class="grid-item"><button>-</button></div>
       <div class="grid-item"><button>*</button></div>
       <div class="grid-item"><button>/</button></div>
-    </div>
-    <div class="clear">
-      <button class="clear-button">
-        Clear
-      </button>
-    </div>
+      <div class="grid-item"><button>=</button></div>
+
+ <script type="text/javascript">
+        var buttons = document.querySelectorAll("#alpha button");
+
+for(var i =0; i < buttons.length; i++){
+  var btn = buttons[i];
+  btn.addEventListener("click", function() {
+    document.getElementById("textbox").value += this.innerHTML;
+  });
+}
+    </script>
+</body>
   </body>
 </html>
