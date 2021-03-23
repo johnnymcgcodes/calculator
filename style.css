@@ -1,21 +1,74 @@
+/* over all page style */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url(images/texture-1155341_640.jpg);
+}
+h1 {
+  color: #c6c6c6;
+}
+/* grid display */
 .display {
-  border: 2px solid rebeccapurple;
-  height: 2rem;
+  grid-column: auto / span 3;
+  width: ;
+}
+#textbox {
+  display: inline-block;
+  width: 100%;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: grey;
+  text-align: center;
+  transition: all 0.3s;
+  outline: none;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: yellow;
 }
 
 .grid-item {
   border: 1px solid grey;
 }
+/* button display */
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #8c8c8c;
+  text-align: center;
+  transition: all 0.3s;
+  outline: none;
+}
 .grid-item button {
   width: 100%;
 }
-.lower-buttons {
-  display: flex;
-  justify-content: space-between;
+
+.grid-container button:hover {
+  color: #292929;
+  background-color: #ffffff;
+}
+.top-bar button:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
